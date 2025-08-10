@@ -3,7 +3,7 @@ import { PawPrintIcon } from "lucide-react";
 
 const Header = () => {
   return (
-    <header className="px-3 py-3 border-b-1">
+    <header className="px-5 py-3 border-b-1">
       <div className="flex items-center justify-between max-w-7xl mx-auto w-full">
         <div className="inline-flex gap-2">
           <PawPrintIcon className="text-purple-500" />
