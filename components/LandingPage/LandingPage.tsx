@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Hero from "./Hero";
 import Stats from "./Stats";
+import Procedure from "./Procedure";
 
 const LandingPage = () => {
   return (
@@ -8,6 +9,7 @@ const LandingPage = () => {
       <Header />
       <Hero />
       <Stats />
+      <Procedure />
     </>
   );
 };
