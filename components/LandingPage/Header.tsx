@@ -6,11 +6,11 @@ const Header = () => {
     <header className="px-5 py-3 border-b-1 border-purple-100">
       <div className="flex items-center justify-between max-w-7xl mx-auto w-full">
         <div className="inline-flex gap-2">
-          <PawPrintIcon className="text-purple-500" />
+          <PawPrintIcon className="text-purple-600" />
           <h1 className="font-semibold">FurFinder</h1>
         </div>
         <nav className="hidden sm:flex gap-5 text-sm text-gray-500 font-sans font-semibold">
-          <Link href={"#"} className="hover:text-gray-900">
+          <Link href={"#procedure"} className="hover:text-gray-900">
             How it works
           </Link>
           <Link href={"#"} className="hover:text-gray-900">
@@ -20,7 +20,7 @@ const Header = () => {
             About us
           </Link>
         </nav>
-        <button className="bg-purple-500 text-white text-sm px-3 py-2 rounded-lg cursor-pointer hover:bg-purple-600 font-semibold">
+        <button className="bg-purple-600 text-white text-sm px-3 py-2 rounded-lg cursor-pointer hover:bg-purple-500 transition font-semibold">
           Get Started
         </button>
       </div>

@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="grid md:grid-cols-2 max-w-7xl mx-auto w-full px-5 py-10 xl:px-0 md:py-30 gap-5">
         <div className="flex flex-col justify-center gap-5 ">
           <Badge
-            className="bg-purple-200 text-purple-700 font-sans py-1 px-2 animate-bounce"
+            className="bg-purple-200 text-purple-600 font-sans py-1 px-2 animate-bounce"
             variant="secondary"
           >
             <Star />
@@ -34,11 +34,11 @@ const Hero = () => {
             joy of a furry companion.
           </p>
           <div className="flex gap-2">
-            <Button className="flex items-center bg-purple-500 text-white sm:text-lg sm:px-5 sm:py-5 rounded-lg cursor-pointer hover:bg-purple-600 font-semibold">
+            <Button className="flex items-center bg-purple-600 text-white sm:text-lg sm:px-5 sm:py-5 rounded-lg cursor-pointer hover:bg-purple-600 font-semibold">
               <Search /> Start Searching
             </Button>
             <Button
-              className="border-purple-500 text-purple-500 hover:text-purple-600 hover:bg-purple-50 hover:border-purple-600 sm:text-lg sm:px-5 sm:py-5 rounded-lg cursor-pointer font-bold"
+              className="border-purple-600 text-purple-600 hover:text-purple-600 hover:bg-purple-50 hover:border-purple-600 sm:text-lg sm:px-5 sm:py-5 rounded-lg cursor-pointer font-bold"
               variant={"outline"}
             >
               Learn More
@@ -47,14 +47,14 @@ const Hero = () => {
           <div className="flex gap-2 ">
             <Badge
               variant={"outline"}
-              className="border-purple-200 text-purple-500"
+              className="border-purple-200 text-purple-600"
             >
               <Shield />
               Verified Shelters
             </Badge>
             <Badge
               variant={"outline"}
-              className="border-purple-200 text-purple-500"
+              className="border-purple-200 text-purple-600"
             >
               <Clock />
               24/7 Support
