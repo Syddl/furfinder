@@ -15,7 +15,7 @@ import { Button } from "./ui/button";
 
 const PetCard = () => {
   return (
-    <Card className="overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-0 group hover:scale-105">
+    <Card className="overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-0 group hover:scale-105 py-0 pb-6">
       <div className="aspect-square overflow-hidden relative">
         <Avatar className="w-full h-full rounded-none">
           <Image
@@ -31,7 +31,7 @@ const PetCard = () => {
         </Badge>
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
-      <CardHeader className="pb-2">
+      <CardHeader className="">
         <div className="flex items-center justify-between">
           <CardTitle className="text-lg text-blue-900">Luna</CardTitle>
           <div className="flex text-yellow-400">

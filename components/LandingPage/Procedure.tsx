@@ -3,7 +3,7 @@ import { EyeIcon, Phone, SearchIcon } from "lucide-react";
 const Procedure = () => {
   return (
     <section
-      className="py-15 bg-gradient-to-b from-white via-white to-purple-50"
+      className="py-15 md:py-25 bg-gradient-to-b from-white via-white to-purple-50"
       id="procedure"
     >
       <div className="max-w-7xl mx-auto w-full flex flex-col gap-5 font-sans">
