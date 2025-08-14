@@ -16,15 +16,15 @@ import { Search } from "lucide-react";
 import { useActionState } from "react";
 import animals from "@/app/api/petfinder/animals";
 
-export function SearchModal() {
+export function GetStartedModal() {
   const [state, formAction, isPending] = useActionState(animals, undefined);
 
   return (
     <Dialog>
       <form action={formAction}>
         <DialogTrigger asChild>
-          <Button className="flex items-center bg-purple-600 text-white sm:text-lg sm:px-5 sm:py-5 rounded-lg cursor-pointer hover:bg-purple-500 font-semibold transition-colors">
-            <Search /> Start Searching
+          <Button className="bg-purple-600 text-white text-sm px-3 py-2 rounded-lg cursor-pointer hover:bg-purple-500 transition font-semibold">
+            Get Started
           </Button>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px] bg-white text-gray-800 rounded-xl shadow-lg border border-purple-100">

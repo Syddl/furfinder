@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PawPrintIcon } from "lucide-react";
+import { GetStartedModal } from "./GetStartedModal";
 
 const Header = () => {
   return (
@@ -20,9 +21,7 @@ const Header = () => {
             About us
           </Link>
         </nav>
-        <button className="bg-purple-600 text-white text-sm px-3 py-2 rounded-lg cursor-pointer hover:bg-purple-500 transition font-semibold">
-          Get Started
-        </button>
+        <GetStartedModal />
       </div>
     </header>
   );
