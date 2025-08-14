@@ -8,16 +8,16 @@ const Footer = () => {
         <p>© 2025 FurFinder. All rights reserved.</p>
         <div className="flex items-center gap-5 cursor-pointer">
           <Link target="_blank" href={"https://www.devjustine.me/"}>
-            <Globe className="hover:text-gray-600" />
+            <Globe className="hover:text-gray-600 h-5 w-5" />
           </Link>
           <Link target="_blank" href={"https://github.com/Syddl"}>
-            <Github className="hover:text-gray-600" />
+            <Github className="hover:text-gray-600 h-5 w-5" />
           </Link>
           <Link
             target="_blank"
             href={"https://www.linkedin.com/in/justine-jude-cuevas-6b6235285/"}
           >
-            <Linkedin className="hover:text-gray-600" />
+            <Linkedin className="hover:text-gray-600 h-5 w-5" />
           </Link>
         </div>
       </div>
