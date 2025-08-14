@@ -1,9 +1,10 @@
 import { Badge } from "@/components/ui/badge";
-import { Clock, Search, Star } from "lucide-react";
+import { Clock, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Shield } from "lucide-react";
 import Image from "next/image";
 import Dog from "@/assests/dog.webp";
+import { SearchModal } from "./SearchModal";
 
 const Hero = () => {
   const background = `
@@ -34,9 +35,7 @@ const Hero = () => {
             joy of a furry companion.
           </p>
           <div className="flex gap-2">
-            <Button className="flex items-center bg-purple-600 text-white sm:text-lg sm:px-5 sm:py-5 rounded-lg cursor-pointer hover:bg-purple-600 font-semibold">
-              <Search /> Start Searching
-            </Button>
+            <SearchModal />
             <Button
               className="border-purple-600 text-purple-600 hover:text-purple-600 hover:bg-purple-50 hover:border-purple-600 sm:text-lg sm:px-5 sm:py-5 rounded-lg cursor-pointer font-bold"
               variant={"outline"}
