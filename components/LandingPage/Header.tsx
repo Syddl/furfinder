@@ -3,7 +3,7 @@ import { PawPrintIcon } from "lucide-react";
 
 const Header = () => {
   return (
-    <header className="px-5 py-3 border-b-1 border-purple-100">
+    <header className="px-5 py-3  border-purple-100 border-b-solid border-b-1 sticky top-0 bg-white/80 z-50">
       <div className="flex items-center justify-between max-w-7xl mx-auto w-full">
         <div className="inline-flex gap-2">
           <PawPrintIcon className="text-purple-600" />
@@ -13,10 +13,10 @@ const Header = () => {
           <Link href={"#procedure"} className="hover:text-gray-900">
             How it works
           </Link>
-          <Link href={"#"} className="hover:text-gray-900">
+          <Link href={"#featured"} className="hover:text-gray-900">
             Featured pets
           </Link>
-          <Link href={"#"} className="hover:text-gray-900">
+          <Link href={"#mission"} className="hover:text-gray-900">
             About us
           </Link>
         </nav>

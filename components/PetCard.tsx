@@ -15,48 +15,38 @@ import { Button } from "./ui/button";
 
 const PetCard = () => {
   return (
-    <Card className="overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border-0 group hover:scale-105 py-0 pb-6">
+    <div className="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
       <div className="aspect-square overflow-hidden relative">
         <Avatar className="w-full h-full rounded-none">
           <Image
-            src={DogImage}
-            alt="Luna the cat"
-            width={150}
-            height={150}
+            src={DogImage || "/placeholder.svg"}
+            alt="Luna the dog"
+            width={300}
+            height={300}
             className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
           />
         </Avatar>
-        <Badge className="absolute top-3 right-3 bg-green-500 hover:bg-green-500 text-white">
+        <Badge className="absolute top-3 right-3 bg-green-500 hover:bg-green-500 text-white z-10">
           Available
         </Badge>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-5"></div>
       </div>
-      <CardHeader className="">
-        <div className="flex items-center justify-between">
-          <CardTitle className="text-lg text-blue-900">Luna</CardTitle>
-          <div className="flex text-yellow-400">
-            {[...Array(5)].map((_, i) => (
-              <Star key={i} className="h-3 w-3 fill-current" />
-            ))}
-          </div>
+
+      <div className="p-4">
+        <div className="flex items-center justify-between mb-2">
+          <h3 className="text-xl font-semibold text-gray-800">Luna</h3>
+          <div className="flex text-yellow-400">{"★".repeat(5)}</div>
         </div>
-        <CardDescription className="text-blue-600">
-          Tabby Cat • 2 years old
-        </CardDescription>
-      </CardHeader>
-      <CardContent className="pt-0 space-y-3">
-        <div className="flex items-center text-blue-500 text-sm">
-          <MapPin className="h-4 w-4 mr-1" />
+        <p className="text-blue-600 text-sm mb-2">Tabby Cat • 2 years old</p>
+        <p className="text-gray-500 text-sm mb-4 flex items-center">
+          <span className="mr-1">📍</span>
           San Francisco, CA
-        </div>
-        <Button
-          size="sm"
-          className="w-full bg-purple-500 hover:bg-purple-600 text-white rounded-full cursor-pointer"
-        >
+        </p>
+        <Button className="w-full bg-purple-600 hover:bg-purple-700">
           View Profile
         </Button>
-      </CardContent>
-    </Card>
+      </div>
+    </div>
   );
 };
 

@@ -3,7 +3,10 @@ import { Button } from "../ui/button";
 
 const Featured = () => {
   return (
-    <section className="py-15 md:py-25 bg-gradient-to-b from-purple-50 via-purple-100 to-purple-100 px-5">
+    <section
+      className="py-15 md:py-25 bg-gradient-to-b from-purple-50 via-purple-100 to-purple-100 px-5"
+      id="featured"
+    >
       <div className="max-w-7xl w-full mx-auto flex flex-col justify-center">
         <div className="text-center mb-10">
           <h1 className="font-bold text-4xl bg-gradient-to-r from-violet-700 to-fuchsia-400 bg-clip-text text-transparent mb-3">
