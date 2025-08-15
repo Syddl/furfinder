@@ -42,7 +42,7 @@ const PetCard = () => {
           <span className="mr-1">📍</span>
           San Francisco, CA
         </p>
-        <Button className="w-full bg-purple-600 hover:bg-purple-700">
+        <Button className="w-full bg-purple-600 hover:bg-purple-700 cursor-pointer">
           View Profile
         </Button>
       </div>

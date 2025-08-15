@@ -2,10 +2,12 @@ import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import { Search } from "lucide-react";
 import { MobileFilter } from "./MobileFIlter";
+import PetCard from "../PetCard";
+import FilterSideBar from "./FilterSideBar";
 
 const MainContext = () => {
   return (
-    <main className="bg-purple-50 h-screen px-5 py-10">
+    <main className="bg-purple-50 px-5 py-10">
       <div className="max-w-7xl mx-auto w-full ">
         <div className="flex flex-col gap-5">
           <div className="">
@@ -25,8 +27,23 @@ const MainContext = () => {
               Search
             </Button>
           </div>
-          <div className="md:hidden">
+          <div className="mb-5">
             <MobileFilter />
+          </div>
+        </div>
+        <div className="flex gap-5">
+          <div>
+            <FilterSideBar />
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <PetCard />
+            <PetCard />
+            <PetCard />
+            <PetCard />
+            <PetCard />
+            <PetCard />
+            <PetCard />
+            <PetCard />
           </div>
         </div>
       </div>
