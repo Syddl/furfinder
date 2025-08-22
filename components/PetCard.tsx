@@ -1,15 +1,6 @@
-import { MapPin } from "lucide-react";
 import Image from "next/image";
 import DogImage from "@/assests/dog.webp";
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-  CardContent,
-} from "./ui/card";
 import { Avatar } from "./ui/avatar";
-import { Star } from "lucide-react";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 

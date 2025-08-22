@@ -16,7 +16,7 @@ const MainContext = () => {
               Showing 127 pets available for adoption near you
             </p>
           </div>
-          <div className="flex flex-col md:flex-row  gap-5">
+          <div className="flex flex-col md:flex-row  gap-5 md:mb-5">
             <Input
               height={5}
               placeholder="Search by breed, name, or location..."
@@ -27,15 +27,15 @@ const MainContext = () => {
               Search
             </Button>
           </div>
-          <div className="mb-5">
+          <div className="mb-5 md:hidden">
             <MobileFilter />
           </div>
         </div>
         <div className="flex gap-5">
-          <div>
+          <div className="hidden md:flex">
             <FilterSideBar />
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-4 gap-5">
             <PetCard />
             <PetCard />
             <PetCard />
